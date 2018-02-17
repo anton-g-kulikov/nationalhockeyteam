@@ -1,0 +1,195 @@
+// ресет, нормалайз
+@import '../../node_modules/stylus-normalize/normalize'
+
+// базовые установки
+header-font = 'Fira Sans', serif
+header-weight = 700
+
+text-font = 'Fira Sans', serif
+text-weight = 400
+
+text-size = 20px
+text-lineheight = 32px
+
+// основные стили
+*
+ margin 0
+ box-sizing border-box
+
+body
+	background-color #fff
+	
+// типографика
+a
+	font text-size/text-lineheight
+	color #2364AA
+	&:hover
+		color red
+	&:visited
+	  color desaturate(#2364AA, 60%)
+	  &:hover
+	    color red
+	&.white
+		color #f1efea
+		font text-weight text-size*0.6/text-lineheight*0.6 header-font
+
+a.item
+	text-decoration none
+
+h1
+	text-align center
+	font header-weight text-size*3/text-lineheight*2 header-font
+	@media all and (max-width 600px)
+		font header-weight text-size*2/text-lineheight header-font
+	@media all and (max-width 360px)
+		font header-weight text-size*2/text-lineheight header-font
+
+h2
+	font header-weight text-size*1.5/text-lineheight header-font
+
+h3
+	font header-weight text-size/text-lineheight header-font
+
+p
+	color #333
+	font text-weight text-size/text-lineheight text-font
+
+.note
+	display inline
+	color lighten(#333, 20%)
+	font text-weight text-size*0.6/text-lineheight*0.73 header-font
+		
+.year
+	color #333
+	font header-weight text-size*0.9/text-lineheight*0.7 header-font
+	text-align center
+		
+.lead
+	font italic text-weight text-size*1.2/text-lineheight*1.2 text-font
+	font-weight text-weight
+	font-style italic
+	@media all and (max-width 360px)
+		font italic text-size/text-lineheight text-font
+
+.small
+	color #666
+	font 16px/24px text-font
+	font-weight text-weight
+
+ul, ol
+	color #333
+	font text-weight text-size/text-lineheight text-font
+	margin 0
+		
+
+// вспомогательные блоки
+
+.cover
+	height 100%;
+	display flex
+	flex-direction column
+	justify-content center
+	align-items center
+	padding 0 24px
+	background-size cover
+	
+.footer
+	font text-weight text-size*0.7/text-lineheight*0.73 header-font
+ 
+.media-block
+	display flex
+	flex-direction row
+	align-items flex-start
+	@media all and (max-width 360px)
+		flex-direction column
+
+.media-object
+	flex 1 1 auto
+
+.media-text
+	flex 1 1 auto
+
+.portrait
+	width 80px
+	border-radius 40px
+
+hr
+	border 0px
+	height 1px;
+	background rgba(204,204,204,0.5);
+	margin 0
+	&.bold
+		height 3px;
+		background rgba(0,0,0,1);
+	
+
+// модули, марджины, паддинги, сетка
+@import 'components/modules.styl'
+@import 'components/grid.styl'
+
+.l-col-year
+	display flex
+	flex 0 0 10%
+	@media all and (max-width 480px)
+		flex 0 1 auto
+	
+.l-col-items
+	display flex
+	flex-direction row
+	
+	-webkit-flex-wrap wrap
+	-ms-flex-wrap wrap
+	flex-wrap wrap
+	
+	flex 0 0 90%
+	@media all and (max-width 480px)
+		flex 0 1 auto
+
+// цвета
+.highlight-blue
+	background-color #0039A6
+	color #fff
+
+.highlight-red
+	background-color #D52B1E
+	color #fff
+
+
+.golden
+	color #ffd23f
+
+.silver
+	color #ddd
+
+.bronze
+	color #f6ba80
+	
+
+// menu-styles
+
+.js-menu-fixed
+	position fixed
+	bottom 0px
+	width 960px
+	@media all and (max-width 1000px)
+		width 90%
+		left 20px
+	background-color #fff
+	
+.years-list
+	list-style none
+	margin-left -40px
+	display flex
+	flex-direction row
+	justify-content space-between
+	flex-wrap wrap
+	@media all and (max-width 480px)
+		justify-content flex-start
+	li
+		a
+			color #000
+			text-decoration none
+			&:hover
+				color red
+		@media all and (max-width 480px)
+			margin-right 20px
