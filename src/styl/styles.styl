@@ -1,25 +1,29 @@
 // ресет, нормалайз
 @import '../../node_modules/stylus-normalize/normalize'
 
-// базовые установки
-header-font = 'Fira Sans', serif
-header-weight = 700
-
-text-font = 'Fira Sans', serif
-text-weight = 400
-
-text-size = 20px
-text-lineheight = 32px
-
 // основные стили
 *
  margin 0
  box-sizing border-box
 
 body
-	background-color #fff
-	
+	background-color #f3f3f3
+
+// модули, марджины, паддинги, сетка
+@import 'components/modules.styl'
+@import 'components/grid.styl'
+
+
 // типографика
+header-font = 'PT Sans', sans-serif
+header-weight = 700
+
+text-font = 'PT Sans', sans-serif
+text-weight = 400
+
+text-size = 20px
+text-lineheight = 32px
+
 a
 	font text-size/text-lineheight
 	color #2364AA
@@ -38,17 +42,19 @@ a.item
 
 h1
 	text-align center
-	font header-weight text-size*3/text-lineheight*2 header-font
+	font header-weight text-size*3/text-lineheight*3 header-font
 	@media all and (max-width 600px)
-		font header-weight text-size*2/text-lineheight header-font
+		font header-weight text-size*1.2/text-lineheight header-font
 	@media all and (max-width 360px)
-		font header-weight text-size*2/text-lineheight header-font
+		font header-weight text-size*1.2/text-lineheight header-font
 
 h2
-	font header-weight text-size*1.5/text-lineheight header-font
+	font header-weight text-size*1.1/text-lineheight header-font
 
 h3
-	font header-weight text-size/text-lineheight header-font
+	font header-weight text-size*0.7/text-lineheight*0.7 header-font
+	text-transform uppercase
+	letter-spacing 2px
 
 p
 	color #333
@@ -59,11 +65,6 @@ p
 	color lighten(#333, 20%)
 	font text-weight text-size*0.6/text-lineheight*0.73 header-font
 		
-.year
-	color #333
-	font header-weight text-size*0.9/text-lineheight*0.7 header-font
-	text-align center
-		
 .lead
 	font italic text-weight text-size*1.2/text-lineheight*1.2 text-font
 	font-weight text-weight
@@ -72,9 +73,8 @@ p
 		font italic text-size/text-lineheight text-font
 
 .small
-	color #666
-	font 16px/24px text-font
-	font-weight text-weight
+	// color #666
+	font text-weight text-size*0.6/text-lineheight header-font
 
 ul, ol
 	color #333
@@ -121,29 +121,126 @@ hr
 	&.bold
 		height 3px;
 		background rgba(0,0,0,1);
-	
 
-// модули, марджины, паддинги, сетка
-@import 'components/modules.styl'
-@import 'components/grid.styl'
+// флаги
 
-.l-col-year
-	display flex
-	flex 0 0 10%
-	@media all and (max-width 480px)
-		flex 0 1 auto
+.flag-icon-background {
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+.flag-icon {
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+  width: 1.33333333em;
+  line-height: 1em;
+}
+.flag-icon:before {
+  content: "\00a0";
+}
+
+.flag-icon-ru {
+  background-image: url(../assets/ru.svg);
+}
+
+.flag-icon-cz {
+  background-image: url(../assets/cz.svg);
+}
+
+.flag-icon-de {
+  background-image: url(../assets/de.svg);
+}
+
+.flag-icon-no {
+  background-image: url(../assets/no.svg);
+}
+
+.flag-icon-se {
+  background-image: url(../assets/se.svg);
+}
+
+.flag-icon-si {
+  background-image: url(../assets/si.svg);
+}
+
+.flag-icon-sk {
+  background-image: url(../assets/sk.svg);
+}
+
+.flag-icon-us {
+  background-image: url(../assets/us.svg);
+}
+// .l-col-year
+// 	display flex
+// 	text-align center
+// 	@media all and (max-width 480px)
+// 		flex 1 1 auto
 	
-.l-col-items
+// .l-col-items
+// 	display flex
+// 	flex-direction row
+	
+// 	-webkit-flex-wrap wrap
+// 	-ms-flex-wrap wrap
+// 	flex-wrap wrap
+	
+// 	@media all and (max-width 480px)
+// 		flex 1 1 auto
+
+
+// оформление данных
+
+.game, .date, .match, .score, .defeat, .goals, .player, .time
 	display flex
+	flex 0 1 auto
+	@media all and (max-width 640px)
+		flex-direction column
+	
+.date
+	flex 0 1 10%
+	font text-weight text-size*0.7/text-lineheight header-font
+
+.match
+	flex 0 1 25%
+	@media all and (max-width 640px)
+		flex-direction row
+	align-items baseline
+	font text-weight text-size/text-lineheight text-font
+	
+.score
+	flex 0 1 10%
+	@media all and (max-width 640px)
+		flex-direction row
+	font text-weight text-size/text-lineheight text-font
+	
+.goals
+	flex 0 1 55%
 	flex-direction row
-	
 	-webkit-flex-wrap wrap
 	-ms-flex-wrap wrap
 	flex-wrap wrap
-	
-	flex 0 0 90%
-	@media all and (max-width 480px)
-		flex 0 1 auto
+	font text-weight text-size*0.8/text-lineheight header-font
+	align-items baseline
+
+.time
+	padding-right 4px
+
+.time
+	font text-weight text-size*0.6/text-lineheight header-font
+
+.team
+	display flex
+	flex 0 1 auto
+	@media all and (max-width 640px)
+		flex-direction column
+	font text-weight text-size*0.8/text-lineheight*0.8 header-font
+
+.roster
+	flex 1 1 25%
+	padding-right 24px
 
 // цвета
 .highlight-blue
@@ -154,9 +251,14 @@ hr
 	background-color #D52B1E
 	color #fff
 
+.victory
+	color green
+	
+.defeat
+	color red
 
-.golden
-	color #ffd23f
+.gold
+	background-color #ffd23f
 
 .silver
 	color #ddd
