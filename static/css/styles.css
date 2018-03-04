@@ -183,124 +183,7 @@ th {
   box-sizing: border-box;
 }
 body {
-  background-color: #fff;
-}
-a {
-  font: 20px/32px;
-  color: #2364aa;
-}
-a:hover {
-  color: #f00;
-}
-a:visited {
-  color: #4c6582;
-}
-a:visited:hover {
-  color: #f00;
-}
-a.white {
-  color: #f1efea;
-  font: 400 12px /19.2px 'Fira Sans', serif;
-}
-a.item {
-  text-decoration: none;
-}
-h1 {
-  text-align: center;
-  font: 700 60px /64px 'Fira Sans', serif;
-}
-@media all and (max-width: 600px) {
-  h1 {
-    font: 700 40px/32px 'Fira Sans', serif;
-  }
-}
-@media all and (max-width: 360px) {
-  h1 {
-    font: 700 40px/32px 'Fira Sans', serif;
-  }
-}
-h2 {
-  font: 700 30px/32px 'Fira Sans', serif;
-}
-h3 {
-  font: 700 20px/32px 'Fira Sans', serif;
-}
-p {
-  color: #333;
-  font: 400 20px/32px 'Fira Sans', serif;
-}
-.note {
-  display: inline;
-  color: #5c5c5c;
-  font: 400 12px /23.36px 'Fira Sans', serif;
-}
-.year {
-  color: #333;
-  font: 700 18px /22.4px 'Fira Sans', serif;
-  text-align: center;
-}
-.lead {
-  font: italic 400 24px /38.4px 'Fira Sans', serif;
-  font-weight: 400;
-  font-style: italic;
-}
-@media all and (max-width: 360px) {
-  .lead {
-    font: italic 20px/32px 'Fira Sans', serif;
-  }
-}
-.small {
-  color: #666;
-  font: 16px/24px 'Fira Sans', serif;
-  font-weight: 400;
-}
-ul,
-ol {
-  color: #333;
-  font: 400 20px/32px 'Fira Sans', serif;
-  margin: 0;
-}
-.cover {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 24px;
-  background-size: cover;
-}
-.footer {
-  font: 400 14px /23.36px 'Fira Sans', serif;
-}
-.media-block {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-}
-@media all and (max-width: 360px) {
-  .media-block {
-    flex-direction: column;
-  }
-}
-.media-object {
-  flex: 1 1 auto;
-}
-.media-text {
-  flex: 1 1 auto;
-}
-.portrait {
-  width: 80px;
-  border-radius: 40px;
-}
-hr {
-  border: 0px;
-  height: 1px;
-  background: rgba(204,204,204,0.5);
-  margin: 0;
-}
-hr.bold {
-  height: 3px;
-  background: #000;
+  background-color: #f3f3f3;
 }
 .w-xxs {
   width: 4px;
@@ -799,27 +682,233 @@ hr.bold {
 .l-col-1-8 {
   flex: 1 1 60px;
 }
-.l-col-year {
-  display: flex;
-  flex: 0 0 10%;
+a {
+  font: 20px/32px;
+  color: #2364aa;
 }
-@media all and (max-width: 480px) {
-  .l-col-year {
-    flex: 0 1 auto;
+a:hover {
+  color: #f00;
+}
+a:visited {
+  color: #4c6582;
+}
+a:visited:hover {
+  color: #f00;
+}
+a.white {
+  color: #f1efea;
+  font: 400 12px /19.2px 'PT Sans', sans-serif;
+}
+a.item {
+  text-decoration: none;
+}
+h1 {
+  text-align: center;
+  font: 700 60px /96px 'PT Sans', sans-serif;
+}
+@media all and (max-width: 600px) {
+  h1 {
+    font: 700 24px/32px 'PT Sans', sans-serif;
   }
 }
-.l-col-items {
+@media all and (max-width: 360px) {
+  h1 {
+    font: 700 24px/32px 'PT Sans', sans-serif;
+  }
+}
+h2 {
+  font: 700 22px/32px 'PT Sans', sans-serif;
+}
+h3 {
+  font: 700 14px /22.4px 'PT Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+p {
+  color: #333;
+  font: 400 20px/32px 'PT Sans', sans-serif;
+}
+.note {
+  display: inline;
+  color: #5c5c5c;
+  font: 400 12px /23.36px 'PT Sans', sans-serif;
+}
+.lead {
+  font: italic 400 24px /38.4px 'PT Sans', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+@media all and (max-width: 360px) {
+  .lead {
+    font: italic 20px/32px 'PT Sans', sans-serif;
+  }
+}
+.small {
+  font: 400 12px/32px 'PT Sans', sans-serif;
+}
+ul,
+ol {
+  color: #333;
+  font: 400 20px/32px 'PT Sans', sans-serif;
+  margin: 0;
+}
+.cover {
+  height: 100%;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 24px;
+  background-size: cover;
+}
+.footer {
+  font: 400 14px /23.36px 'PT Sans', sans-serif;
+}
+.media-block {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+@media all and (max-width: 360px) {
+  .media-block {
+    flex-direction: column;
+  }
+}
+.media-object {
+  flex: 1 1 auto;
+}
+.media-text {
+  flex: 1 1 auto;
+}
+.portrait {
+  width: 80px;
+  border-radius: 40px;
+}
+hr {
+  border: 0px;
+  height: 1px;
+  background: rgba(204,204,204,0.5);
+  margin: 0;
+}
+hr.bold {
+  height: 3px;
+  background: #000;
+}
+.flag-icon-background {
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+.flag-icon {
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+  width: 1.33333333em;
+  line-height: 1em;
+}
+.flag-icon:before {
+  content: "\00a0";
+}
+.flag-icon-ru {
+  background-image: url("../assets/ru.svg");
+}
+.flag-icon-cz {
+  background-image: url("../assets/cz.svg");
+}
+.flag-icon-de {
+  background-image: url("../assets/de.svg");
+}
+.flag-icon-no {
+  background-image: url("../assets/no.svg");
+}
+.flag-icon-se {
+  background-image: url("../assets/se.svg");
+}
+.flag-icon-si {
+  background-image: url("../assets/si.svg");
+}
+.flag-icon-sk {
+  background-image: url("../assets/sk.svg");
+}
+.flag-icon-us {
+  background-image: url("../assets/us.svg");
+}
+.game,
+.date,
+.match,
+.score,
+.defeat,
+.goals,
+.player,
+.time {
+  display: flex;
+  flex: 0 1 auto;
+}
+@media all and (max-width: 640px) {
+  .game,
+  .date,
+  .match,
+  .score,
+  .defeat,
+  .goals,
+  .player,
+  .time {
+    flex-direction: column;
+  }
+}
+.date {
+  flex: 0 1 10%;
+  font: 400 14px/32px 'PT Sans', sans-serif;
+}
+.match {
+  flex: 0 1 25%;
+  align-items: baseline;
+  font: 400 20px/32px 'PT Sans', sans-serif;
+}
+@media all and (max-width: 640px) {
+  .match {
+    flex-direction: row;
+  }
+}
+.score {
+  flex: 0 1 10%;
+  font: 400 20px/32px 'PT Sans', sans-serif;
+}
+@media all and (max-width: 640px) {
+  .score {
+    flex-direction: row;
+  }
+}
+.goals {
+  flex: 0 1 55%;
   flex-direction: row;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  flex: 0 0 90%;
+  font: 400 16px/32px 'PT Sans', sans-serif;
+  align-items: baseline;
 }
-@media all and (max-width: 480px) {
-  .l-col-items {
-    flex: 0 1 auto;
+.time {
+  padding-right: 4px;
+}
+.time {
+  font: 400 12px/32px 'PT Sans', sans-serif;
+}
+.team {
+  display: flex;
+  flex: 0 1 auto;
+  font: 400 16px /25.6px 'PT Sans', sans-serif;
+}
+@media all and (max-width: 640px) {
+  .team {
+    flex-direction: column;
   }
+}
+.roster {
+  flex: 1 1 25%;
+  padding-right: 24px;
 }
 .highlight-blue {
   background-color: #0039a6;
@@ -829,8 +918,14 @@ hr.bold {
   background-color: #d52b1e;
   color: #fff;
 }
-.golden {
-  color: #ffd23f;
+.victory {
+  color: #008000;
+}
+.defeat {
+  color: #f00;
+}
+.gold {
+  background-color: #ffd23f;
 }
 .silver {
   color: #ddd;
