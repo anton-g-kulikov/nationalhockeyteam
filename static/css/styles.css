@@ -814,11 +814,35 @@ hr.bold {
 .flag-icon-ru {
   background-image: url("../assets/ru.svg");
 }
+.flag-icon-by {
+  background-image: url("../assets/by.svg");
+}
+.flag-icon-ca {
+  background-image: url("../assets/ca.svg");
+}
+.flag-icon-ch {
+  background-image: url("../assets/ch.svg");
+}
 .flag-icon-cz {
   background-image: url("../assets/cz.svg");
 }
 .flag-icon-de {
   background-image: url("../assets/de.svg");
+}
+.flag-icon-dk {
+  background-image: url("../assets/dk.svg");
+}
+.flag-icon-fi {
+  background-image: url("../assets/fi.svg");
+}
+.flag-icon-it {
+  background-image: url("../assets/it.svg");
+}
+.flag-icon-kz {
+  background-image: url("../assets/kz.svg");
+}
+.flag-icon-lv {
+  background-image: url("../assets/lv.svg");
 }
 .flag-icon-no {
   background-image: url("../assets/no.svg");
@@ -925,25 +949,22 @@ hr.bold {
   color: #f00;
 }
 .gold {
-  background-color: #ffd23f;
+  color: #ffd23f;
 }
 .silver {
-  color: #ddd;
+  color: #aaa;
 }
 .bronze {
   color: #f6ba80;
 }
 .js-menu-fixed {
   position: fixed;
+  z-index: 1000;
+  width: 100%;
   bottom: 0px;
-  width: 960px;
+  padding: 20px;
+  text-align: center;
   background-color: #fff;
-}
-@media all and (max-width: 1000px) {
-  .js-menu-fixed {
-    width: 90%;
-    left: 20px;
-  }
 }
 .years-list {
   list-style: none;
