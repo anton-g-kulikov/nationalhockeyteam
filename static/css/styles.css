@@ -814,6 +814,9 @@ hr.bold {
 .flag-icon-ru {
   background-image: url("../assets/ru.svg");
 }
+.flag-icon-at {
+  background-image: url("../assets/at.svg");
+}
 .flag-icon-by {
   background-image: url("../assets/by.svg");
 }
