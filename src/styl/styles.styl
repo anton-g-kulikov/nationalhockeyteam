@@ -1,7 +1,9 @@
 // ресет, нормалайз
+
 @import '../../node_modules/stylus-normalize/normalize'
 
 // основные стили
+
 *
  margin 0
  box-sizing border-box
@@ -10,11 +12,13 @@ body
 	background-color #f3f3f3
 
 // модули, марджины, паддинги, сетка
+
 @import 'components/modules.styl'
 @import 'components/grid.styl'
 
 
 // типографика
+
 header-font = 'PT Sans', sans-serif
 header-weight = 700
 
@@ -27,6 +31,8 @@ text-lineheight = 32px
 a
 	font text-size/text-lineheight
 	color #2364AA
+	text-decoration none
+	
 	&:hover
 		color red
 	&:visited
@@ -37,8 +43,7 @@ a
 		color #f1efea
 		font text-weight text-size*0.6/text-lineheight*0.6 header-font
 
-a.item
-	text-decoration none
+
 
 h1
 	text-align center
@@ -85,33 +90,42 @@ ul, ol
 // вспомогательные блоки
 
 .cover
-	height 100%;
+	height 80%;
 	display flex
 	flex-direction column
 	justify-content center
 	align-items center
 	padding 0 24px
+	background-image: url(../assets/img/cover.jpg);
 	background-size cover
+
+.toner-layer
+	background-color rgba(0,0,0,0.5)
+	position absolute
+	top 0
+	left 0
+	width 100%
+	height 80%
 	
 .footer
 	font text-weight text-size*0.7/text-lineheight*0.73 header-font
  
-.media-block
-	display flex
-	flex-direction row
-	align-items flex-start
-	@media all and (max-width 360px)
-		flex-direction column
+// .media-block
+// 	display flex
+// 	flex-direction row
+// 	align-items flex-start
+// 	@media all and (max-width 360px)
+// 		flex-direction column
 
-.media-object
-	flex 1 1 auto
+// .media-object
+// 	flex 1 1 auto
 
-.media-text
-	flex 1 1 auto
+// .media-text
+// 	flex 1 1 auto
 
-.portrait
-	width 80px
-	border-radius 40px
+// .portrait
+// 	width 80px
+// 	border-radius 40px
 
 hr
 	border 0px
@@ -124,111 +138,7 @@ hr
 
 // флаги
 
-.flag-icon-background {
-  background-size: contain;
-  background-position: 50%;
-  background-repeat: no-repeat;
-}
-.flag-icon {
-  background-size: contain;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  position: relative;
-  display: inline-block;
-  width: 1.33333333em;
-  line-height: 1em;
-}
-.flag-icon:before {
-  content: "\00a0";
-}
-
-.flag-icon-ru {
-  background-image: url(../assets/ru.svg);
-}
-
-.flag-icon-at {
-  background-image: url(../assets/at.svg);
-}
-
-.flag-icon-by {
-  background-image: url(../assets/by.svg);
-}
-
-.flag-icon-ca {
-  background-image: url(../assets/ca.svg);
-}
-
-.flag-icon-ch {
-  background-image: url(../assets/ch.svg);
-}
-
-.flag-icon-cz {
-  background-image: url(../assets/cz.svg);
-}
-
-.flag-icon-de {
-  background-image: url(../assets/de.svg);
-}
-
-.flag-icon-dk {
-  background-image: url(../assets/dk.svg);
-}
-
-.flag-icon-fi {
-  background-image: url(../assets/fi.svg);
-}
-
-.flag-icon-fr {
-  background-image: url(../assets/fr.svg);
-}
-
-.flag-icon-it {
-  background-image: url(../assets/it.svg);
-}
-
-.flag-icon-kz {
-  background-image: url(../assets/kz.svg);
-}
-
-.flag-icon-lv {
-  background-image: url(../assets/lv.svg);
-}
-
-.flag-icon-no {
-  background-image: url(../assets/no.svg);
-}
-
-.flag-icon-se {
-  background-image: url(../assets/se.svg);
-}
-
-.flag-icon-si {
-  background-image: url(../assets/si.svg);
-}
-
-.flag-icon-sk {
-  background-image: url(../assets/sk.svg);
-}
-
-.flag-icon-us {
-  background-image: url(../assets/us.svg);
-}
-// .l-col-year
-// 	display flex
-// 	text-align center
-// 	@media all and (max-width 480px)
-// 		flex 1 1 auto
-	
-// .l-col-items
-// 	display flex
-// 	flex-direction row
-	
-// 	-webkit-flex-wrap wrap
-// 	-ms-flex-wrap wrap
-// 	flex-wrap wrap
-	
-// 	@media all and (max-width 480px)
-// 		flex 1 1 auto
+@import 'components/icons.styl'
 
 
 // оформление данных
@@ -283,6 +193,14 @@ hr
 	padding-right 24px
 
 // цвета
+
+.white
+	color #fff
+
+.cover .white
+	z-index 1000
+	opacity 0.8
+
 .highlight-blue
 	background-color #0039A6
 	color #fff
@@ -313,26 +231,27 @@ hr
 	position fixed
 	z-index 1000
 	width 100%
-	bottom 0px
-	padding 20px
+	top 0px
+	padding 10px
 	text-align center
 	background-color #fff
+	@media all and (max-width 640px)
+		position relative
 	
 	
 .years-list
 	list-style none
-	margin-left -40px
+	margin-left -20px
 	display flex
 	flex-direction row
 	justify-content space-between
 	flex-wrap wrap
-	@media all and (max-width 480px)
+	@media all and (max-width 960px)
 		justify-content flex-start
 	li
 		a
 			color #000
 			text-decoration none
+			margin-right 20px
 			&:hover
 				color red
-		@media all and (max-width 480px)
-			margin-right 20px
