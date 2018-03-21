@@ -685,6 +685,7 @@ body {
 a {
   font: 20px/32px;
   color: #2364aa;
+  text-decoration: none;
 }
 a:hover {
   color: #f00;
@@ -698,9 +699,6 @@ a:visited:hover {
 a.white {
   color: #f1efea;
   font: 400 12px /19.2px 'PT Sans', sans-serif;
-}
-a.item {
-  text-decoration: none;
 }
 h1 {
   text-align: center;
@@ -753,36 +751,25 @@ ol {
   margin: 0;
 }
 .cover {
-  height: 100%;
+  height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0 24px;
+  background-image: url("../assets/img/cover.jpg");
   background-size: cover;
+}
+.toner-layer {
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
 }
 .footer {
   font: 400 14px /23.36px 'PT Sans', sans-serif;
-}
-.media-block {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-}
-@media all and (max-width: 360px) {
-  .media-block {
-    flex-direction: column;
-  }
-}
-.media-object {
-  flex: 1 1 auto;
-}
-.media-text {
-  flex: 1 1 auto;
-}
-.portrait {
-  width: 80px;
-  border-radius: 40px;
 }
 hr {
   border: 0px;
@@ -812,58 +799,58 @@ hr.bold {
   content: "\00a0";
 }
 .flag-icon-ru {
-  background-image: url("../assets/ru.svg");
+  background-image: url("../assets/svg/ru.svg");
 }
 .flag-icon-at {
-  background-image: url("../assets/at.svg");
+  background-image: url("../assets/svg/at.svg");
 }
 .flag-icon-by {
-  background-image: url("../assets/by.svg");
+  background-image: url("../assets/svg/by.svg");
 }
 .flag-icon-ca {
-  background-image: url("../assets/ca.svg");
+  background-image: url("../assets/svg/ca.svg");
 }
 .flag-icon-ch {
-  background-image: url("../assets/ch.svg");
+  background-image: url("../assets/svg/ch.svg");
 }
 .flag-icon-cz {
-  background-image: url("../assets/cz.svg");
+  background-image: url("../assets/svg/cz.svg");
 }
 .flag-icon-de {
-  background-image: url("../assets/de.svg");
+  background-image: url("../assets/svg/de.svg");
 }
 .flag-icon-dk {
-  background-image: url("../assets/dk.svg");
+  background-image: url("../assets/svg/dk.svg");
 }
 .flag-icon-fi {
-  background-image: url("../assets/fi.svg");
+  background-image: url("../assets/svg/fi.svg");
 }
 .flag-icon-fr {
-  background-image: url("../assets/fr.svg");
+  background-image: url("../assets/svg/fr.svg");
 }
 .flag-icon-it {
-  background-image: url("../assets/it.svg");
+  background-image: url("../assets/svg/it.svg");
 }
 .flag-icon-kz {
-  background-image: url("../assets/kz.svg");
+  background-image: url("../assets/svg/kz.svg");
 }
 .flag-icon-lv {
-  background-image: url("../assets/lv.svg");
+  background-image: url("../assets/svg/lv.svg");
 }
 .flag-icon-no {
-  background-image: url("../assets/no.svg");
+  background-image: url("../assets/svg/no.svg");
 }
 .flag-icon-se {
-  background-image: url("../assets/se.svg");
+  background-image: url("../assets/svg/se.svg");
 }
 .flag-icon-si {
-  background-image: url("../assets/si.svg");
+  background-image: url("../assets/svg/si.svg");
 }
 .flag-icon-sk {
-  background-image: url("../assets/sk.svg");
+  background-image: url("../assets/svg/sk.svg");
 }
 .flag-icon-us {
-  background-image: url("../assets/us.svg");
+  background-image: url("../assets/svg/us.svg");
 }
 .game,
 .date,
@@ -940,6 +927,13 @@ hr.bold {
   flex: 1 1 25%;
   padding-right: 24px;
 }
+.white {
+  color: #fff;
+}
+.cover .white {
+  z-index: 1000;
+  opacity: 0.8;
+}
 .highlight-blue {
   background-color: #0039a6;
   color: #fff;
@@ -967,20 +961,25 @@ hr.bold {
   position: fixed;
   z-index: 1000;
   width: 100%;
-  bottom: 0px;
-  padding: 20px;
+  top: 0px;
+  padding: 10px;
   text-align: center;
   background-color: #fff;
 }
+@media all and (max-width: 640px) {
+  .js-menu-fixed {
+    position: relative;
+  }
+}
 .years-list {
   list-style: none;
-  margin-left: -40px;
+  margin-left: -20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-@media all and (max-width: 480px) {
+@media all and (max-width: 960px) {
   .years-list {
     justify-content: flex-start;
   }
@@ -988,12 +987,8 @@ hr.bold {
 .years-list li a {
   color: #000;
   text-decoration: none;
+  margin-right: 20px;
 }
 .years-list li a:hover {
   color: #f00;
-}
-@media all and (max-width: 480px) {
-  .years-list li {
-    margin-right: 20px;
-  }
 }
