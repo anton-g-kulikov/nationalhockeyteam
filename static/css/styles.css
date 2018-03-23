@@ -183,7 +183,7 @@ th {
   box-sizing: border-box;
 }
 body {
-  background-color: #f3f3f3;
+  background-color: #f6f6f6;
 }
 .w-xxs {
   width: 4px;
@@ -857,9 +857,9 @@ hr.bold {
 .match,
 .score,
 .defeat,
-.goals,
+.stats,
 .player,
-.time {
+.goalkeeper {
   display: flex;
   flex: 0 1 auto;
 }
@@ -869,9 +869,9 @@ hr.bold {
   .match,
   .score,
   .defeat,
-  .goals,
+  .stats,
   .player,
-  .time {
+  .goalkeeper {
     flex-direction: column;
   }
 }
@@ -891,6 +891,7 @@ hr.bold {
 }
 .score {
   flex: 0 1 10%;
+  cursor: help;
   font: 400 20px/32px 'PT Sans', sans-serif;
 }
 @media all and (max-width: 640px) {
@@ -898,7 +899,7 @@ hr.bold {
     flex-direction: row;
   }
 }
-.goals {
+.stats {
   flex: 0 1 55%;
   flex-direction: row;
   -webkit-flex-wrap: wrap;
@@ -907,10 +908,10 @@ hr.bold {
   font: 400 16px/32px 'PT Sans', sans-serif;
   align-items: baseline;
 }
-.time {
+.goal,
+.saves,
+.periods {
   padding-right: 4px;
-}
-.time {
   font: 400 12px/32px 'PT Sans', sans-serif;
 }
 .team {
