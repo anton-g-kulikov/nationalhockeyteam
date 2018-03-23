@@ -9,7 +9,7 @@
  box-sizing border-box
 
 body
-	background-color #f3f3f3
+	background-color #f6f6f6
 
 // модули, марджины, паддинги, сетка
 
@@ -143,7 +143,7 @@ hr
 
 // оформление данных
 
-.game, .date, .match, .score, .defeat, .goals, .player, .time
+.game, .date, .match, .score, .defeat, .stats, .player, .goalkeeper
 	display flex
 	flex 0 1 auto
 	@media all and (max-width 640px)
@@ -162,11 +162,12 @@ hr
 	
 .score
 	flex 0 1 10%
+	cursor help
 	@media all and (max-width 640px)
 		flex-direction row
 	font text-weight text-size/text-lineheight text-font
 	
-.goals
+.stats
 	flex 0 1 55%
 	flex-direction row
 	-webkit-flex-wrap wrap
@@ -175,10 +176,8 @@ hr
 	font text-weight text-size*0.8/text-lineheight header-font
 	align-items baseline
 
-.time
+.goal, .saves, .periods
 	padding-right 4px
-
-.time
 	font text-weight text-size*0.6/text-lineheight header-font
 
 .team
