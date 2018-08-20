@@ -928,6 +928,9 @@ hr.bold {
   flex: 1 1 25%;
   padding-right: 24px;
 }
+.roster span {
+  cursor: help;
+}
 .white {
   color: #fff;
 }
