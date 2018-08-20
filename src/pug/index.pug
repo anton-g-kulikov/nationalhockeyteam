@@ -198,7 +198,8 @@ html
 							span Германия
 						.score
 							.victory 4
-							| :3 (ОТ)
+							| :3
+							| ОТ
 						.stats
 							.player Войнов
 							.goal &nbsp;(19', 1:0),
@@ -245,7 +246,7 @@ html
 						.score
 							| 1:
 							.victory 2
-							| &nbsp;(Б)
+							| &nbsp;Б
 						.stats
 							.player Андронов
 							.goal &nbsp;(43', 1:1),
@@ -1494,7 +1495,7 @@ html
 						.score
 							| 2:
 							.defeat 1
-							|  Б
+							| &nbsp;Б
 						.stats
 							
 					.game.mb-s
@@ -1532,7 +1533,8 @@ html
 					span.silver &#10103;
 			.l-row.mb-m
 				.l-col 
-					h3 Состав
+					h3 Состав 
+						a(href="static/assets/pdf/IHM2300RUS_83_9_0.pdf" target="_blank").small &#128459;статистика
 					.team.mb-m
 						.roster
 							.role
@@ -1560,11 +1562,19 @@ html
 							span.small.flag-icon.flag-icon-ru
 							| &nbsp;
 							span Россия
-						.score
+						.score(title="0-1, 0-1, 1-1")
 							| 1:
 							.victory 3
 						.stats
-							
+							.goalkeeper Кошечкин
+							.saves &nbsp;(33(32), 96 %), —
+							.player Афиногенов
+							.goal &nbsp;(14', 0:1),
+							.player Овечкин
+							.goal &nbsp;(29', 0:2),
+							.player Козлов
+							.goal &nbsp;(59', 1:3)
+
 					.game.mb-s
 						.date 11.05
 						.match
@@ -1575,11 +1585,20 @@ html
 							span.small.flag-icon.flag-icon-kz
 							| &nbsp;
 							span Казахстан
-						.score
+						.score(title="1-0, 2-0, 1-1")
 							.victory 4
 							| :1
 						.stats
-							
+							.goalkeeper Еременко
+							.saves &nbsp;(19(18), 95 %), —
+							.player Овечкин
+							.goal &nbsp;(10', 1:0 Б),
+							.player Ковальчук
+							.goal &nbsp;(20', 2:0),
+							.player Семин
+							.goal &nbsp;(37', 3:0),
+							.player Гребешков
+							.goal &nbsp;(43', 4:0)
 					.game.mb-s
 						.date 13.05
 						.match
@@ -1590,10 +1609,18 @@ html
 							span.small.flag-icon.flag-icon-by
 							| &nbsp;
 							span Белоруссия
-						.score
+						.score(title="1-0, 2-0, 0-1")
 							.victory 3
 							| :1
 						.stats
+							.goalkeeper Варламов
+							.saves &nbsp;(20(19), 95 %), —
+							.player Мозякин
+							.goal &nbsp;(10', 1:0 Б),
+							.player Овечкин
+							.goal &nbsp;(32', 2:0),
+							.player Анисимов
+							.goal &nbsp;(34', 3:0)
 							
 					.game.mb-s
 						.date 15.05
@@ -1605,11 +1632,19 @@ html
 							span.small.flag-icon.flag-icon-de
 							| &nbsp;
 							span Германия
-						.score
+						.score(title="1-0, 1-1, 1-1")
 							.victory 3
 							| :2
 						.stats
-							
+							.goalkeeper Варламов
+							.saves &nbsp;(34(32), 94 %), —
+							.player Ковальчук
+							.goal &nbsp;(14', 1:0),
+							.player Кулемин
+							.goal &nbsp;(26', 2:0),
+							.player Овечкин
+							.goal &nbsp;(49', 3:1)
+
 					.game.mb-s
 						.date 16.05
 						.match
@@ -1620,10 +1655,24 @@ html
 							span.small.flag-icon.flag-icon-ru
 							| &nbsp;
 							span Россия
-						.score
+						.score(title="0-2, 1-1, 0-3")
 							| 1:
 							.victory 6
 						.stats
+							.goalkeeper Кошечкин
+							.saves &nbsp;(31(30), 97 %), —
+							.player Дацюк
+							.goal &nbsp;(15', 0:1),
+							.player Овечкин
+							.goal &nbsp;(19', 0:2 М),
+							.player Малкин
+							.goal &nbsp;(33', 1:3 Б),
+							.player Дацюк
+							.goal &nbsp;(47', 1:4),
+							.player Дацюк
+							.goal &nbsp;(50', 1:5 ШБ),
+							.player Кулемин
+							.goal &nbsp;(56', 1:6)
 							
 					.game.mb-s
 						.date 18.05
@@ -1635,10 +1684,22 @@ html
 							span.small.flag-icon.flag-icon-fi
 							| &nbsp;
 							span Финляндия
-						.score
+						.score(title="1-0, 2-0, 2-0")
 							.victory 5
 							| :0
 						.stats
+							.goalkeeper Варламов
+							.saves &nbsp;(36(36), 100 %), —
+							.player Федоров
+							.goal &nbsp;(16', 1:0 Б),
+							.player Малкин
+							.goal &nbsp;(33', 2:0 Б),
+							.player Кулемин
+							.goal &nbsp;(34', 3:0),
+							.player Емелин
+							.goal &nbsp;(42', 4:0),
+							.player Афиногенов
+							.goal &nbsp;(42', 5:0)
 							
 					.game.mb-s
 						.date 20.05, 1/4
@@ -1650,13 +1711,25 @@ html
 							span.small.flag-icon.flag-icon-ca
 							| &nbsp;
 							span Канада
-						.score
+						.score(title="1-0, 2-0, 2-2")
 							.victory 5
 							| :2
 						.stats
-							
+							.goalkeeper Варламов
+							.saves &nbsp;(27(25), 93 %), —
+							.player Афиногенов
+							.goal &nbsp;(19', 1:0),
+							.player Дацюк
+							.goal &nbsp;(21', 2:0 ББ),
+							.player Малкин
+							.goal &nbsp;(37', 3:0 Б),
+							.player Федоров
+							.goal &nbsp;(47', 4:0),
+							.player Малкин
+							.goal &nbsp;(56', 5:1 ПВ)
+
 					.game.mb-s
-						.date 8.05, 1/2
+						.date 22.05, 1/2
 						.match
 							span.small.flag-icon.flag-icon-ru
 							| &nbsp;
@@ -1665,10 +1738,16 @@ html
 							span.small.flag-icon.flag-icon-de
 							| &nbsp;
 							span Германия
-						.score
+						.score(title="0-1, 1-0, 1-0")
 							.victory 2
 							| :1
 						.stats
+							.goalkeeper Кошечкин
+							.saves &nbsp;(27(26), 96 %), —
+							.player Малкин
+							.goal &nbsp;(31', 1:1),
+							.player Дацюк
+							.goal &nbsp;(58', 2:0)
 							
 					.game.mb-s
 						.date 23.05, финал
@@ -1680,17 +1759,23 @@ html
 							span.small.flag-icon.flag-icon-cz
 							| &nbsp;
 							span Чехия
-						.score
+						.score(title="0-1, 0-1, 1-0")
 							.defeat 1
 							| :2
 						.stats
+							goalkeeper Варламов
+							.saves &nbsp;(25(23), 92 %), —
+							.player Дацюк
+							.goal &nbsp;(59', 1:2)
+
 			hr.mb-xxl(id="2009")
 			.l-row.year
 				h2.year.mb-m 2009, ЧМ в Берне 
 					span.gold &#10102;
 			.l-row.mb-m
 				.l-col 
-					h3 Состав
+					h3 Состав 
+						a(href="static/assets/pdf/IHM2000RUS_83_12_0.pdf" target="_blank").small &#128459;статистика
 					.team.mb-m
 						.roster
 							.role
@@ -1699,7 +1784,9 @@ html
 						.roster
 							.role
 								.small Голкиперы
-							| Александр Еременко, Илья Брызгалов, Василий Кошечкин
+							span(title="3, 3(57), 94,74 %, 1,29") Александр Еременко, 
+							span(title="7, 14(108), 92,93 %, 2,08") Илья Брызгалов, 
+							span(title="0") Василий Кошечкин
 							.role
 								.small Защитники
 							| Виталий Вишневский, Илья Никулин, Антон Волченков, Дмитрий Калинин, Константин Корнеев, Виталий Атюшов, Денис Гребешков, Виталий Прошкин, Олег Твердовский
@@ -1718,10 +1805,22 @@ html
 							span.small.flag-icon.flag-icon-ru
 							| &nbsp;
 							span Россия
-						.score
+						.score(title="0-3, 0-0, 0-2")
 							| 0:
 							.victory 5
 						.stats
+							.goalkeeper Брызгалов
+							.saves &nbsp;(20(20), 100 %), —
+							.player Сапрыкин
+							.goal &nbsp;(8', 0:1),
+							.player Ковальчук
+							.goal &nbsp;(9', 0:2),
+							.player Зиновьев
+							.goal &nbsp;(15', 0:3),
+							.player Курьянов
+							.goal &nbsp;(42', 0:4),
+							.player Зарипов
+							.goal &nbsp;(51', 0:5 Б)
 							
 					.game.mb-s
 						.date 26.04
@@ -1733,10 +1832,26 @@ html
 							span.small.flag-icon.flag-icon-fr
 							| &nbsp;
 							span Франция
-						.score
+						.score(title="5-1 , 1-1 , 1-0")
 							.victory 7
 							| :2
 						.stats
+							.goalkeeper Еременко
+							.saves &nbsp;(25(23), 92 %), —
+							.player Радулов
+							.goal &nbsp;(1', 1:0),
+							.player Зарипов
+							.goal &nbsp;(7', 2:0),
+							.player Радулов
+							.goal &nbsp;(7', 3:0),
+							.player Пережогин
+							.goal &nbsp;(8', 4:0),
+							.player Терещенко
+							.goal &nbsp;(15', 5:1),
+							.player Терещенко
+							.goal &nbsp;(27', 6:1),
+							.player Ковальчук
+							.goal &nbsp;(49', 7:2)
 							
 					.game.mb-s
 						.date 28.04
@@ -1748,10 +1863,20 @@ html
 							span.small.flag-icon.flag-icon-ch
 							| &nbsp;
 							span Щвейцария
-						.score
+						.score(title="1-2 , 1-0 , 2-0")
 							.victory 4
 							| :2
 						.stats
+							.goalkeeper Брызгалов
+							.saves &nbsp;(39(37), 95 %), —
+							.player Атюшов
+							.goal &nbsp;(2', 1:0),
+							.player Ковальчук
+							.goal &nbsp;(29', 2:2),
+							.player Морозов
+							.goal &nbsp;(48', 3:2),
+							.player Пережогин
+							.goal &nbsp;(59', 4:2)
 							
 					.game.mb-s
 						.date 30.04
@@ -1763,10 +1888,25 @@ html
 							span.small.flag-icon.flag-icon-se
 							| &nbsp;
 							span Швеция
-						.score
+						.score(title="2-2 , 1-1 , 2-2 , 1-0")
 							.victory 6
 							| :5
+							| ОТ
 						.stats
+							.goalkeeper Брызгалов
+							.saves &nbsp;(38(33), 87 %), —
+							.player Никулин
+							.goal &nbsp;(12', 1:1 Б),
+							.player Сапрыкин
+							.goal &nbsp;(14', 2:1),
+							.player Калинин
+							.goal &nbsp;(27', 3:3),
+							.player Мозякин
+							.goal &nbsp;(50', 4:4),
+							.player Прошкин
+							.goal &nbsp;(57', 5:4),
+							.player Калинин
+							.goal &nbsp;(64', 6:5)
 							
 					.game.mb-s
 						.date 2.05
@@ -1778,10 +1918,20 @@ html
 							span.small.flag-icon.flag-icon-us
 							| &nbsp;
 							span США
-						.score
+						.score(title="3-1 , 1-0 , 0-0")
 							.victory 4
 							| :1
 						.stats
+							.goalkeeper Брызгалов
+							.saves &nbsp;(27(26), 96 %), —
+							.player Сапрыкин
+							.goal &nbsp;(5', 1:1),
+							.player Пережогин
+							.goal &nbsp;(9', 2:1 Б),
+							.player Мозякин
+							.goal &nbsp;(17', 3:1),
+							.player Радулов
+							.goal &nbsp;(21', 4:1 Б)
 							
 					.game.mb-s
 						.date 3.05
@@ -1793,10 +1943,24 @@ html
 							span.small.flag-icon.flag-icon-ru
 							| &nbsp;
 							span Россия
-						.score
+						.score(title="0-1 , 1-3 , 0-2 (тренер Латвии — Олег Знарок)")
 							| 1:
 							.victory 6
 						.stats
+							.goalkeeper Еременко
+							.saves &nbsp;(26(25), 96 %), —
+							.player Курьянов
+							.goal &nbsp;(11', 0:1 Б),
+							.player Терещенко
+							.goal &nbsp;(21', 0:2),
+							.player Твердовский
+							.goal &nbsp;(23', 0:3 Б),
+							.player Курьянов
+							.goal &nbsp;(23', 0:4),
+							.player Фролов
+							.goal &nbsp;(43', 1:5),
+							.player Твердовский
+							.goal &nbsp;(46', 1:6)
 							
 					.game.mb-s
 						.date 6.05, 1/4
@@ -1808,10 +1972,22 @@ html
 							span.small.flag-icon.flag-icon-by
 							| &nbsp;
 							span Белоруссия
-						.score
+						.score(title="0-0 , 3-3 , 1-0")
 							.victory 4
 							| :3
 						.stats
+							.goalkeeper Брызгалов
+							.saves &nbsp;(40:00, 16(13), 81 %),
+							.goalkeeper Еременко
+							.saves &nbsp;(20:00, 6(6), 100 %), —
+							.player Прошкин
+							.goal &nbsp;(25', 1:1),
+							.player Атюшов
+							.goal &nbsp;(36', 2:2),
+							.player Фролов
+							.goal &nbsp;(37', 3:2),
+							.player Ковальчик
+							.goal &nbsp;(47', 4:3)
 							
 					.game.mb-s
 						.date 8.05, 1/2
@@ -1823,10 +1999,18 @@ html
 							span.small.flag-icon.flag-icon-us
 							| &nbsp;
 							span США
-						.score
+						.score(title="0-0 , 2-2 , 1-0")
 							.victory 3
 							| :2
 						.stats
+							.goalkeeper Брызгалов
+							.saves &nbsp;(20(18), 90 %), —
+							.player Ковальчук
+							.goal &nbsp;(31', 1:1),
+							.player Фролов
+							.goal &nbsp;(34', 2:1),
+							.player Горовиков
+							.goal &nbsp;(58', 3:2 Б),
 							
 					.game.mb-s
 						.date 10.05, финал
@@ -1838,10 +2022,17 @@ html
 							span.small.flag-icon.flag-icon-ca
 							| &nbsp;
 							span Канада
-						.score
+						.score(title="1-1 , 1-0 , 0-0")
 							.victory 2
 							| :1
 						.stats
+							.goalkeeper Брызгалов
+							.saves &nbsp;(38(37), 97 %), —
+							.player Сапрыкин
+							.goal &nbsp;(11', 1:1 Б),
+							.player Радулов
+							.goal &nbsp;(34', 2:1)
+
 			hr.mb-xxl(id="2008")
 			.l-row.year
 				h2.year.mb-m 2008, ЧМ в Квебеке 
@@ -1849,7 +2040,7 @@ html
 			.l-row.mb-m
 				.l-col 
 					h3 Состав 
-						a(href="static/assets/pdf/IHM1320RUS_83_15_0.pdf" target="_blank") &#128459;
+						a(href="static/assets/pdf/IHM1320RUS_83_15_0.pdf" target="_blank").small &#128459;статистика
 					.team.mb-m
 						.roster
 							.role
@@ -1858,7 +2049,9 @@ html
 						.roster
 							.role
 								.small Голкиперы
-							| Михаил Бирюков, Александр Еременко, Евгений Набоков
+							span(title="3, 6(68), 91,67 %, 2,22") Михаил Бирюков, 
+							span(title="2, 3(36), 91,67 %, 2,10") Александр Еременко, 
+							span(title="5, 9(126), 92,86 %, 1,78") Евгений Набоков
 							.role
 								.small Защитники
 							| Илья Никулин, Дмитрий Калинин, Константин Корнеев, Виталий Атюшев, Денис Гребешков, Дмитрий Куликов, Николай Белов, Федор Тютин, Алексей Емелин
@@ -1883,7 +2076,7 @@ html
 							| :1
 						.stats
 							.goalkeeper Еременко
-							.saves &nbsp;(18(17), 94 %), &#10686; 
+							.saves &nbsp;(18(17), 94 %), —
 							.player Семин
 							.goal &nbsp;(4', 1:0),
 							.player Овечкин
@@ -1917,7 +2110,7 @@ html
 							.goalkeeper Бирюков
 							.saves &nbsp;(25(23), 92 %),
 							.goalkeeper Еременко
-							.saves &nbsp;(18(16), 88 %), &#10686; 
+							.saves &nbsp;(18(16), 88 %), — 
 							.player Зиновьев
 							.goal &nbsp;(3', 0:1),
 							.player Горовиков
@@ -1944,7 +2137,7 @@ html
 							| :1
 						.stats
 							.goalkeeper Бирюков
-							.saves &nbsp;(20(19), 95 %), &#10686; 
+							.saves &nbsp;(20(19), 95 %), — 
 							.player Афиногенов
 							.goal &nbsp;(10', 1:0),
 							.player Овечкин
@@ -1965,10 +2158,11 @@ html
 							span Белоруссия
 						.score(title="0-2, 1-0, 2-1, 0-0, 1-0")
 							.victory 4
-							| :3 Б
+							| :3
+							| Б
 						.stats
 							.goalkeeper Бирюков
-							.saves &nbsp;(23(20), 86 %), &#10686; 
+							.saves &nbsp;(23(20), 86 %), — 
 							.player Афиногенов
 							.goal &nbsp;(23', 1:2),
 							.player Овечкин
@@ -1993,7 +2187,7 @@ html
 							| :2
 						.stats
 							.goalkeeper Набоков
-							.saves &nbsp;(30(28), 93 %), &#10686; 
+							.saves &nbsp;(30(28), 93 %), — 
 							.player Семин
 							.goal &nbsp;(32', 1:1),
 							.player Федоров
@@ -2016,7 +2210,7 @@ html
 							.victory 5
 						.stats
 							.goalkeeper Набоков
-							.saves &nbsp;(22(19), 86 %), &#10686; 
+							.saves &nbsp;(22(19), 86 %), — 
 							.player Калинин
 							.goal &nbsp;(15', 0:1),
 							.player Овечкин
@@ -2043,7 +2237,7 @@ html
 							| :0
 						.stats
 							.goalkeeper Набоков
-							.saves &nbsp;(22(22), 100 %), &#10686; 
+							.saves &nbsp;(22(22), 100 %), — 
 							.player Семин
 							.goal &nbsp;(1', 1:0),
 							.player Афиногенов
@@ -2074,7 +2268,7 @@ html
 							| :0
 						.stats
 							.goalkeeper Набоков
-							.saves &nbsp;(23(23), 100 %), &#10686; 
+							.saves &nbsp;(23(23), 100 %), — 
 							.player Федоров
 							.goal &nbsp;(13', 1:0),
 							.player Зарипов
@@ -2101,13 +2295,13 @@ html
 
 						.stats
 							.goalkeeper Набоков
-							.saves &nbsp;(29(25), 86 %), &#10686; 
+							.saves &nbsp;(29(25), 86 %), — 
 							.player Семин
 							.goal &nbsp;(1', 0:1),
 							.player Семин
 							.goal &nbsp;(21', 2:3 Б),
 							.player Терещенко
-							.goal &nbsp;(48', 4:3),
+							.goal &nbsp;(48', 3:4),
 							.player Ковальчук
 							.goal &nbsp;(54', 4:4),
 							.player Ковальчук
