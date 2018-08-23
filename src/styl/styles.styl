@@ -143,7 +143,7 @@ hr
 
 // оформление данных
 
-.game, .date, .match, .score, .defeat, .stats, .player, .goalkeeper
+.game, .date, .match, .score, .defeat
 	display flex
 	flex 0 1 auto
 	@media all and (max-width 640px)
@@ -168,16 +168,20 @@ hr
 	font text-weight text-size/text-lineheight text-font
 	
 .stats
+	display flex
 	flex 0 1 55%
 	flex-direction row
 	-webkit-flex-wrap wrap
 	-ms-flex-wrap wrap
 	flex-wrap wrap
+	@media all and (max-width 640px)
+		display inline
 	font text-weight text-size*0.8/text-lineheight header-font
 	align-items baseline
 
-.goal, .saves, .periods
+.goal, .saves
 	padding-right 4px
+	display inline
 	font text-weight text-size*0.6/text-lineheight header-font
 
 .team
