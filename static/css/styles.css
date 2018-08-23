@@ -856,10 +856,7 @@ hr.bold {
 .date,
 .match,
 .score,
-.defeat,
-.stats,
-.player,
-.goalkeeper {
+.defeat {
   display: flex;
   flex: 0 1 auto;
 }
@@ -868,10 +865,7 @@ hr.bold {
   .date,
   .match,
   .score,
-  .defeat,
-  .stats,
-  .player,
-  .goalkeeper {
+  .defeat {
     flex-direction: column;
   }
 }
@@ -900,6 +894,7 @@ hr.bold {
   }
 }
 .stats {
+  display: flex;
   flex: 0 1 55%;
   flex-direction: row;
   -webkit-flex-wrap: wrap;
@@ -908,10 +903,15 @@ hr.bold {
   font: 400 16px/32px 'PT Sans', sans-serif;
   align-items: baseline;
 }
+@media all and (max-width: 640px) {
+  .stats {
+    display: inline;
+  }
+}
 .goal,
-.saves,
-.periods {
+.saves {
   padding-right: 4px;
+  display: inline;
   font: 400 12px/32px 'PT Sans', sans-serif;
 }
 .team {
