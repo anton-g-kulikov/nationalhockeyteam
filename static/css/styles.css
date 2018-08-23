@@ -873,6 +873,12 @@ hr.bold {
   flex: 0 1 10%;
   font: 400 14px/32px 'PT Sans', sans-serif;
 }
+@media all and (max-width: 640px) {
+  .date {
+    flex: 0 0 auto;
+    margin-top: 20px;
+  }
+}
 .match {
   flex: 0 1 25%;
   align-items: baseline;
@@ -881,6 +887,8 @@ hr.bold {
 @media all and (max-width: 640px) {
   .match {
     flex-direction: row;
+    flex: 0 0 auto;
+    margin-bottom: 10px;
   }
 }
 .score {
@@ -891,6 +899,8 @@ hr.bold {
 @media all and (max-width: 640px) {
   .score {
     flex-direction: row;
+    flex: 0 0 auto;
+    margin-bottom: 10px;
   }
 }
 .stats {
@@ -905,6 +915,7 @@ hr.bold {
 }
 @media all and (max-width: 640px) {
   .stats {
+    flex: 0 0 auto;
     display: inline;
   }
 }
@@ -927,6 +938,11 @@ hr.bold {
 .roster {
   flex: 1 1 25%;
   padding-right: 24px;
+}
+@media all and (max-width: 640px) {
+  .roster {
+    flex: 0 0 auto;
+  }
 }
 .roster span {
   cursor: help;
