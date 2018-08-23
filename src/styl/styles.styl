@@ -152,11 +152,16 @@ hr
 .date
 	flex 0 1 10%
 	font text-weight text-size*0.7/text-lineheight header-font
+	@media all and (max-width 640px)
+		flex 0 0 auto
+		margin-top 20px
 
 .match
 	flex 0 1 25%
 	@media all and (max-width 640px)
 		flex-direction row
+		flex 0 0 auto
+		margin-bottom 10px
 	align-items baseline
 	font text-weight text-size/text-lineheight text-font
 	
@@ -165,6 +170,8 @@ hr
 	cursor help
 	@media all and (max-width 640px)
 		flex-direction row
+		flex 0 0 auto
+		margin-bottom 10px
 	font text-weight text-size/text-lineheight text-font
 	
 .stats
@@ -175,6 +182,7 @@ hr
 	-ms-flex-wrap wrap
 	flex-wrap wrap
 	@media all and (max-width 640px)
+		flex 0 0 auto
 		display inline
 	font text-weight text-size*0.8/text-lineheight header-font
 	align-items baseline
@@ -194,6 +202,8 @@ hr
 .roster
 	flex 1 1 25%
 	padding-right 24px
+	@media all and (max-width 640px)
+		flex 0 0 auto
 	span
 		cursor help
 
